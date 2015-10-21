@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		653C0B171BBC91F3005B6FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B161BBC91F3005B6FD2 /* AppDelegate.swift */; };
-		653C0B191BBC91F3005B6FD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B181BBC91F3005B6FD2 /* ViewController.swift */; };
 		653C0B1C1BBC91F3005B6FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653C0B1A1BBC91F3005B6FD2 /* Main.storyboard */; };
 		653C0B1E1BBC91F3005B6FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653C0B1D1BBC91F3005B6FD2 /* Assets.xcassets */; };
 		653C0B211BBC91F3005B6FD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653C0B1F1BBC91F3005B6FD2 /* LaunchScreen.storyboard */; };
 		653C0B2C1BBC91F4005B6FD2 /* Dartmouth_NutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B2B1BBC91F4005B6FD2 /* Dartmouth_NutritionTests.swift */; };
 		653C0B371BBC91F4005B6FD2 /* Dartmouth_NutritionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B361BBC91F4005B6FD2 /* Dartmouth_NutritionUITests.swift */; };
+		653C0B451BC35602005B6FD2 /* NutritionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B441BC35601005B6FD2 /* NutritionInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B471BCC7A7E005B6FD2 /* MenuClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B461BCC7A7E005B6FD2 /* MenuClient.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B4D1BCF0C26005B6FD2 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B4F1BCF0CA5005B6FD2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B931BD59739005B6FD2 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B951BD5B013005B6FD2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B941BD5B013005B6FD2 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B971BD5C18B005B6FD2 /* MenuFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		653C0B131BBC91F3005B6FD2 /* Dartmouth Nutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dartmouth Nutrition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653C0B161BBC91F3005B6FD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		653C0B181BBC91F3005B6FD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		653C0B1B1BBC91F3005B6FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		653C0B1D1BBC91F3005B6FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653C0B201BBC91F3005B6FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		653C0B321BBC91F4005B6FD2 /* Dartmouth NutritionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dartmouth NutritionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653C0B361BBC91F4005B6FD2 /* Dartmouth_NutritionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dartmouth_NutritionUITests.swift; sourceTree = "<group>"; };
 		653C0B381BBC91F4005B6FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653C0B441BC35601005B6FD2 /* NutritionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionInfo.swift; sourceTree = "<group>"; };
+		653C0B461BCC7A7E005B6FD2 /* MenuClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuClient.swift; sourceTree = "<group>"; };
+		653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		653C0B941BD5B013005B6FD2 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,14 @@
 		653C0B151BBC91F3005B6FD2 /* Dartmouth Nutrition */ = {
 			isa = PBXGroup;
 			children = (
-				653C0B161BBC91F3005B6FD2 /* AppDelegate.swift */,
-				653C0B181BBC91F3005B6FD2 /* ViewController.swift */,
+				653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */,
+				653C0B941BD5B013005B6FD2 /* SearchViewController.swift */,
+				653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */,
+				653C0B491BCF03BA005B6FD2 /* Model */,
+				653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */,
+				653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */,
 				653C0B1A1BBC91F3005B6FD2 /* Main.storyboard */,
-				653C0B1D1BBC91F3005B6FD2 /* Assets.xcassets */,
-				653C0B1F1BBC91F3005B6FD2 /* LaunchScreen.storyboard */,
-				653C0B221BBC91F3005B6FD2 /* Info.plist */,
+				653C0B481BCF035E005B6FD2 /* Supporting Files */,
 			);
 			path = "Dartmouth Nutrition";
 			sourceTree = "<group>";
@@ -123,6 +137,26 @@
 				653C0B381BBC91F4005B6FD2 /* Info.plist */,
 			);
 			path = "Dartmouth NutritionUITests";
+			sourceTree = "<group>";
+		};
+		653C0B481BCF035E005B6FD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				653C0B161BBC91F3005B6FD2 /* AppDelegate.swift */,
+				653C0B221BBC91F3005B6FD2 /* Info.plist */,
+				653C0B1D1BBC91F3005B6FD2 /* Assets.xcassets */,
+				653C0B1F1BBC91F3005B6FD2 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		653C0B491BCF03BA005B6FD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				653C0B461BCC7A7E005B6FD2 /* MenuClient.swift */,
+				653C0B441BC35601005B6FD2 /* NutritionInfo.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				653C0B191BBC91F3005B6FD2 /* ViewController.swift in Sources */,
+				653C0B451BC35602005B6FD2 /* NutritionInfo.swift in Sources */,
+				653C0B951BD5B013005B6FD2 /* SearchViewController.swift in Sources */,
+				653C0B4D1BCF0C26005B6FD2 /* DiaryViewController.swift in Sources */,
 				653C0B171BBC91F3005B6FD2 /* AppDelegate.swift in Sources */,
+				653C0B931BD59739005B6FD2 /* RecipeTableViewController.swift in Sources */,
+				653C0B471BCC7A7E005B6FD2 /* MenuClient.swift in Sources */,
+				653C0B971BD5C18B005B6FD2 /* MenuFilter.swift in Sources */,
+				653C0B4F1BCF0CA5005B6FD2 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

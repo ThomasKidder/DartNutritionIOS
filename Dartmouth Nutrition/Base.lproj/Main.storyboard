@@ -1,25 +1,215 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dF1-mS-29K">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Diary-->
+        <scene sceneID="mPn-ae-ULG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Diary" id="kAA-K9-Cau" customClass="DiaryViewController" customModule="Dartmouth_Nutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="gWC-ku-3wc"/>
+                        <viewControllerLayoutGuide type="bottom" id="obU-q6-buD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="gOI-9l-svY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Diary" image="DiaryIcon" id="GQI-3L-1Lt"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAd-I3-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="75" y="-760"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BUp-av-ddE">
+            <objects>
+                <tabBarController id="dF1-mS-29K" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vpe-HT-WKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7gY-Mv-xhH" kind="relationship" relationship="viewControllers" id="bXY-t2-GeI"/>
+                        <segue destination="kAA-K9-Cau" kind="relationship" relationship="viewControllers" id="puC-Vr-Oop"/>
+                        <segue destination="8Qg-MX-7yy" kind="relationship" relationship="viewControllers" id="2bS-Y8-BKE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5B-ZH-LTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="-1698"/>
+        </scene>
+        <!--Recipe Table View Controller-->
+        <scene sceneID="ntQ-56-OUs">
+            <objects>
+                <tableViewController id="QMs-nV-a5G" customClass="RecipeTableViewController" customModule="Dartmouth_Nutrition" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2eq-wj-7ef">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="zDE-RB-zal">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <connections>
+                                <segue destination="VgH-7F-S4N" kind="embed" id="IW5-Aw-37l"/>
+                            </connections>
+                        </containerView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Recipe" textLabel="kNt-cx-dtl" style="IBUITableViewCellStyleDefault" id="t13-Aj-75d">
+                                <rect key="frame" x="0.0" y="128" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t13-Aj-75d" id="Pq9-7e-VF2">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kNt-cx-dtl">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QMs-nV-a5G" id="60u-fY-NYb"/>
+                            <outlet property="delegate" destination="QMs-nV-a5G" id="5Gh-dl-QBx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="piF-a6-Cy0">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchContainer" destination="zDE-RB-zal" id="wcF-zS-vOz"/>
+                        <outlet property="searchDisplayController" destination="ftu-7y-bve" id="U7K-sQ-vLe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCj-zC-YlB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ftu-7y-bve">
+                    <connections>
+                        <outlet property="delegate" destination="QMs-nV-a5G" id="Cqc-Hj-7lh"/>
+                        <outlet property="searchContentsController" destination="QMs-nV-a5G" id="n4d-q1-gQg"/>
+                        <outlet property="searchResultsDataSource" destination="QMs-nV-a5G" id="8Bl-Ya-XzS"/>
+                        <outlet property="searchResultsDelegate" destination="QMs-nV-a5G" id="n0N-Zx-CJJ"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-944" y="399"/>
+        </scene>
+        <!--Preferences-->
+        <scene sceneID="1BV-ch-lyf">
+            <objects>
+                <viewController id="8Qg-MX-7yy" customClass="PreferencesViewController" customModule="Dartmouth_Nutrition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f4M-cR-O4X"/>
+                        <viewControllerLayoutGuide type="bottom" id="XKt-Af-OtR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HQM-yD-kmU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Preferences" image="PreferencesIcon" id="Xq3-U0-6P2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pg1-oT-Cx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781" y="-768"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="e6B-51-UnV">
+            <objects>
+                <navigationController title="Menu" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="7gY-Mv-xhH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu" image="MenuIcon" id="dOT-bW-1gq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F2i-dM-XMo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QMs-nV-a5G" kind="relationship" relationship="rootViewController" id="y9c-4U-5sd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7il-uZ-ULh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="-760"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="d2l-cm-Rkp">
+            <objects>
+                <viewController id="VgH-7F-S4N" customClass="SearchViewController" customModule="Dartmouth_Nutrition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KZB-RW-uRP"/>
+                        <viewControllerLayoutGuide type="bottom" id="uhP-qj-HTd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBi-9h-xbG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IBo-d8-D3y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="29"/>
+                                <segments>
+                                    <segment title="Breakfast"/>
+                                    <segment title="Lunch"/>
+                                    <segment title="Dinner"/>
+                                    <segment title="Late Night"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mealChange:" destination="VgH-7F-S4N" eventType="valueChanged" id="RZ2-Ya-GYp"/>
+                                </connections>
+                            </segmentedControl>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-qr-8jj">
+                                <rect key="frame" x="0.0" y="57" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s4C-vC-hRV">
+                                <rect key="frame" x="0.0" y="29" width="600" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="krd-BT-dA5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Foco"/>
+                                    <segment title="Collis"/>
+                                    <segment title="Hop"/>
+                                    <segment title="Novack"/>
+                                </segments>
+                                <connections>
+                                    <action selector="venueChange:" destination="VgH-7F-S4N" eventType="valueChanged" id="uDo-ku-hvZ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cD0-qr-8jj" firstAttribute="trailing" secondItem="s4C-vC-hRV" secondAttribute="trailing" id="9dZ-ZF-Wsk"/>
+                            <constraint firstItem="s4C-vC-hRV" firstAttribute="trailing" secondItem="IBo-d8-D3y" secondAttribute="trailing" id="Gl9-ib-nKi"/>
+                            <constraint firstItem="IBo-d8-D3y" firstAttribute="leading" secondItem="YBi-9h-xbG" secondAttribute="leading" id="Oht-HK-vY1"/>
+                            <constraint firstItem="IBo-d8-D3y" firstAttribute="top" secondItem="YBi-9h-xbG" secondAttribute="top" id="UT1-Fj-9sA"/>
+                            <constraint firstItem="cD0-qr-8jj" firstAttribute="top" secondItem="s4C-vC-hRV" secondAttribute="bottom" id="VO6-PE-ulz"/>
+                            <constraint firstItem="s4C-vC-hRV" firstAttribute="leading" secondItem="IBo-d8-D3y" secondAttribute="leading" id="bsJ-E0-wb6"/>
+                            <constraint firstAttribute="trailing" secondItem="IBo-d8-D3y" secondAttribute="trailing" id="eN3-UL-8e8"/>
+                            <constraint firstItem="cD0-qr-8jj" firstAttribute="leading" secondItem="s4C-vC-hRV" secondAttribute="leading" id="pNy-4C-Yk0"/>
+                            <constraint firstItem="s4C-vC-hRV" firstAttribute="top" secondItem="YBi-9h-xbG" secondAttribute="top" constant="29" id="zSk-nc-BwF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mealSelector" destination="IBo-d8-D3y" id="r0c-Fd-1Ah"/>
+                        <outlet property="searchField" destination="cD0-qr-8jj" id="wUk-eZ-fpI"/>
+                        <outlet property="venueSelector" destination="s4C-vC-hRV" id="pez-94-2ui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfd-QR-7Gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="-9"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DiaryIcon" width="32" height="32"/>
+        <image name="MenuIcon" width="32" height="32"/>
+        <image name="PreferencesIcon" width="32" height="32"/>
+    </resources>
 </document>
