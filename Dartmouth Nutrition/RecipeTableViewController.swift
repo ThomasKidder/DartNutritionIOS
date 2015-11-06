@@ -41,7 +41,6 @@ class RecipeTableViewController: UITableViewController {
 //        recipes.append("Vanilla Ice Cream")
 //        recipes.append("Chocolate Chip Cookies")
         
-        print (self.searchContainer == nil)
         self.tableView.reloadData()
         
 //        if(searchContainer != nil){
@@ -76,7 +75,8 @@ class RecipeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCellWithIdentifier("Recipe", forIndexPath: indexPath)
-        let cell = tableView.dequeueReusableCellWithIdentifier("Recipe", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell", forIndexPath: indexPath) as UITableViewCell
+        
 
 
         // Configure the cell...

@@ -18,8 +18,14 @@
 		653C0B4D1BCF0C26005B6FD2 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		653C0B4F1BCF0CA5005B6FD2 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		653C0B931BD59739005B6FD2 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		653C0B951BD5B013005B6FD2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B941BD5B013005B6FD2 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		653C0B951BD5B013005B6FD2 /* MenuSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B941BD5B013005B6FD2 /* MenuSearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		653C0B971BD5C18B005B6FD2 /* MenuFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */; settings = {ASSET_TAGS = (); }; };
+		657F09291BE99ABC00E87F31 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F09281BE99ABC00E87F31 /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
+		657F092B1BEC0A9F00E87F31 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F092A1BEC0A9F00E87F31 /* UserData.swift */; settings = {ASSET_TAGS = (); }; };
+		6583D4931BE846A700D8B4F8 /* NutrientIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D4921BE846A700D8B4F8 /* NutrientIntake.swift */; settings = {ASSET_TAGS = (); }; };
+		65CF98B61BE800A800253FC7 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF98B51BE800A700253FC7 /* RecipeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		65CF98B81BE82A9B00253FC7 /* NutrientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF98B71BE82A9B00253FC7 /* NutrientCell.swift */; settings = {ASSET_TAGS = (); }; };
+		65CF98BA1BE82E1700253FC7 /* Nutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CF98B91BE82E1700253FC7 /* Nutrient.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +63,14 @@
 		653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
-		653C0B941BD5B013005B6FD2 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		653C0B941BD5B013005B6FD2 /* MenuSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSearchViewController.swift; sourceTree = "<group>"; };
 		653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuFilter.swift; sourceTree = "<group>"; };
+		657F09281BE99ABC00E87F31 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		657F092A1BEC0A9F00E87F31 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		6583D4921BE846A700D8B4F8 /* NutrientIntake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutrientIntake.swift; sourceTree = "<group>"; };
+		65CF98B51BE800A700253FC7 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		65CF98B71BE82A9B00253FC7 /* NutrientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutrientCell.swift; sourceTree = "<group>"; };
+		65CF98B91BE82E1700253FC7 /* Nutrient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutrient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +121,10 @@
 		653C0B151BBC91F3005B6FD2 /* Dartmouth Nutrition */ = {
 			isa = PBXGroup;
 			children = (
-				653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */,
-				653C0B941BD5B013005B6FD2 /* SearchViewController.swift */,
-				653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */,
+				65CF98B41BE54DAC00253FC7 /* MenuView */,
+				65CF98B31BE54D9000253FC7 /* PreferencesView */,
+				65CF98B21BE54D7800253FC7 /* DiaryView */,
 				653C0B491BCF03BA005B6FD2 /* Model */,
-				653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */,
-				653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */,
 				653C0B1A1BBC91F3005B6FD2 /* Main.storyboard */,
 				653C0B481BCF035E005B6FD2 /* Supporting Files */,
 			);
@@ -155,8 +165,40 @@
 			children = (
 				653C0B461BCC7A7E005B6FD2 /* MenuClient.swift */,
 				653C0B441BC35601005B6FD2 /* NutritionInfo.swift */,
+				65CF98B91BE82E1700253FC7 /* Nutrient.swift */,
+				6583D4921BE846A700D8B4F8 /* NutrientIntake.swift */,
+				657F09281BE99ABC00E87F31 /* Recipe.swift */,
+				657F092A1BEC0A9F00E87F31 /* UserData.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		65CF98B21BE54D7800253FC7 /* DiaryView */ = {
+			isa = PBXGroup;
+			children = (
+				653C0B4C1BCF0C26005B6FD2 /* DiaryViewController.swift */,
+			);
+			name = DiaryView;
+			sourceTree = "<group>";
+		};
+		65CF98B31BE54D9000253FC7 /* PreferencesView */ = {
+			isa = PBXGroup;
+			children = (
+				653C0B4E1BCF0CA5005B6FD2 /* PreferencesViewController.swift */,
+			);
+			name = PreferencesView;
+			sourceTree = "<group>";
+		};
+		65CF98B41BE54DAC00253FC7 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				65CF98B71BE82A9B00253FC7 /* NutrientCell.swift */,
+				653C0B961BD5C18B005B6FD2 /* MenuFilter.swift */,
+				653C0B941BD5B013005B6FD2 /* MenuSearchViewController.swift */,
+				65CF98B51BE800A700253FC7 /* RecipeViewController.swift */,
+				653C0B921BD59739005B6FD2 /* RecipeTableViewController.swift */,
+			);
+			name = MenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,14 +334,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6583D4931BE846A700D8B4F8 /* NutrientIntake.swift in Sources */,
+				65CF98BA1BE82E1700253FC7 /* Nutrient.swift in Sources */,
+				657F092B1BEC0A9F00E87F31 /* UserData.swift in Sources */,
 				653C0B451BC35602005B6FD2 /* NutritionInfo.swift in Sources */,
-				653C0B951BD5B013005B6FD2 /* SearchViewController.swift in Sources */,
+				653C0B951BD5B013005B6FD2 /* MenuSearchViewController.swift in Sources */,
 				653C0B4D1BCF0C26005B6FD2 /* DiaryViewController.swift in Sources */,
 				653C0B171BBC91F3005B6FD2 /* AppDelegate.swift in Sources */,
+				65CF98B81BE82A9B00253FC7 /* NutrientCell.swift in Sources */,
 				653C0B931BD59739005B6FD2 /* RecipeTableViewController.swift in Sources */,
 				653C0B471BCC7A7E005B6FD2 /* MenuClient.swift in Sources */,
 				653C0B971BD5C18B005B6FD2 /* MenuFilter.swift in Sources */,
+				657F09291BE99ABC00E87F31 /* Recipe.swift in Sources */,
 				653C0B4F1BCF0CA5005B6FD2 /* PreferencesViewController.swift in Sources */,
+				65CF98B61BE800A800253FC7 /* RecipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +574,7 @@
 				653C0B3D1BBC91F4005B6FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		653C0B3E1BBC91F4005B6FD2 /* Build configuration list for PBXNativeTarget "Dartmouth NutritionTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +583,7 @@
 				653C0B401BBC91F4005B6FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		653C0B411BBC91F4005B6FD2 /* Build configuration list for PBXNativeTarget "Dartmouth NutritionUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +592,7 @@
 				653C0B431BBC91F4005B6FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
