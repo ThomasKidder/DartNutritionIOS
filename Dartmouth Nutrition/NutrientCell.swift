@@ -30,8 +30,8 @@ class NutrientCell: UITableViewCell {
         if let intake = nutrientIntake {
             let nut = intake.recipeNutrient
             recipeNutrientLabel.text = "\(nut.name) : \(nut.amount)\(nut.units)"
-            currentIntakeLabel.text = "\(intake.currentIntake)\(nut.units)"
-            predictedIntakeLabel.text = "\(intake.predictedIntake)\(nut.units)"
+//            currentIntakeLabel.text = "\(intake.currentIntake)\(nut.units)"
+//            predictedIntakeLabel.text = "\(intake.predictedIntake)\(nut.units)"
         }
     }
     

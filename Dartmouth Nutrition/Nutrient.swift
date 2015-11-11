@@ -25,7 +25,4 @@ struct Nutrient : CustomStringConvertible {
         self.amount = amount
     }
     
-    
-    
-    
 }

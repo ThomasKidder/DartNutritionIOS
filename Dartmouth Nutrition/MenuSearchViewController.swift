@@ -80,9 +80,6 @@ class MenuSearchViewController: UIViewController, UISearchBarDelegate, UITableVi
         // Do any additional setup after loading the view.
     }
     
-    func printSomething(){
-        print("I printed something")
-    }
     
     @IBAction func mealChange(sender: UISegmentedControl) {
         menuFilter.meal = sender.selectedSegmentIndex
@@ -122,6 +119,7 @@ class MenuSearchViewController: UIViewController, UISearchBarDelegate, UITableVi
         //right now only one section for all the food, could potentially 
         //be divisions for entrees etc
         return 1
+        //[][] array.count // array[sec].count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dF1-mS-29K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S4Q-2i-GQm">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -299,6 +299,53 @@
             </objects>
             <point key="canvasLocation" x="1921" y="-760"/>
         </scene>
+        <!--Initialization View Controller-->
+        <scene sceneID="dJg-Zp-sIS">
+            <objects>
+                <viewController id="S4Q-2i-GQm" customClass="InitializationViewController" customModule="Dartmouth_Nutrition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YNv-R0-NQP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kqy-LP-oec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i7l-kc-D8a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baker.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Diy-3E-rOE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dartMOUTH.png" translatesAutoresizingMaskIntoConstraints="NO" id="CkX-IS-e8R">
+                                <rect key="frame" x="233" y="211" width="133" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="qQH-ht-OeO"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tih-rV-fcd">
+                                <rect key="frame" x="290" y="474" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Diy-3E-rOE" firstAttribute="bottom" secondItem="Kqy-LP-oec" secondAttribute="top" id="2ku-O4-U0f"/>
+                            <constraint firstItem="CkX-IS-e8R" firstAttribute="top" secondItem="YNv-R0-NQP" secondAttribute="bottom" constant="191" id="Hgi-Zq-UGZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Diy-3E-rOE" secondAttribute="trailing" id="IdK-of-uaD"/>
+                            <constraint firstItem="Tih-rV-fcd" firstAttribute="centerX" secondItem="CkX-IS-e8R" secondAttribute="centerX" id="KgK-pJ-7bh"/>
+                            <constraint firstItem="Diy-3E-rOE" firstAttribute="leading" secondItem="i7l-kc-D8a" secondAttribute="leading" id="QRH-1c-sKe"/>
+                            <constraint firstItem="Diy-3E-rOE" firstAttribute="top" secondItem="i7l-kc-D8a" secondAttribute="top" id="gEe-z9-iA6"/>
+                            <constraint firstItem="CkX-IS-e8R" firstAttribute="centerY" secondItem="Diy-3E-rOE" secondAttribute="centerY" id="mfR-n7-pbf"/>
+                            <constraint firstItem="Tih-rV-fcd" firstAttribute="centerX" secondItem="Diy-3E-rOE" secondAttribute="centerX" id="mo4-aN-EI5"/>
+                            <constraint firstItem="Tih-rV-fcd" firstAttribute="top" secondItem="CkX-IS-e8R" secondAttribute="bottom" constant="86" id="s9q-X4-rAI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Tih-rV-fcd" id="qhd-HH-OHB"/>
+                        <segue destination="dF1-mS-29K" kind="show" id="qND-bh-8BP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsh-Jd-nxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="-1704"/>
+        </scene>
         <!--Menu-->
         <scene sceneID="9HC-Vu-w4d">
             <objects>
@@ -342,5 +389,7 @@
         <image name="DiaryIcon" width="32" height="32"/>
         <image name="MenuIcon" width="32" height="32"/>
         <image name="PreferencesIcon" width="32" height="32"/>
+        <image name="baker.jpg" width="761" height="778"/>
+        <image name="dartMOUTH.png" width="302" height="396"/>
     </resources>
 </document>
